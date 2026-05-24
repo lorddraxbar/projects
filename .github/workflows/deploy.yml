@@ -27,8 +27,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This is the critical part. We only upload the subdirectory content
-          path: './hello-world'
+          # Upload the entire repository root so subdirectories are preserved as paths
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
