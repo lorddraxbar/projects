@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris - Drax Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div class="stats">
+            <h1>TETRIS</h1>
+            <div class="stat-box">
+                <p>SCORE</p>
+                <span id="score">0</span>
+            </div>
+            <div class="controls">
+                <p>Controls:</p>
+                <ul>
+                    <li>← / → : Move</li>
+                    <li>↓ : Soft Drop</li>
+                    <li>↑ : Rotate</li>
+                    <li>Space : Hard Drop</li>
+                </ul>
+            </div>
+            <button id="start-btn">Start Game</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
