@@ -1,0 +1,45 @@
+body {
+    background: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.score-board {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #000;
+}
+.grid {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.grid div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+.grid div:active {
+    transform: scale(0.9);
+}
+/* Candy Colors */
+.red { background: radial-gradient(circle, #ff5e5e, #cc0000); border-radius: 50%; }
+.blue { background: radial-gradient(circle, #5eb5ff, #0044cc); border-radius: 20%; }
+.green { background: radial-gradient(circle, #5eff8b, #008822); border-radius: 10%; }
+.yellow { background: radial-gradient(circle, #ffff5e, #ccaa00); clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+.purple { background: radial-gradient(circle, #d45eff, #6600cc); border-radius: 50% 0 50% 0; }
+.orange { background: radial-gradient(circle, #ffb35e, #cc6600); clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%); }
